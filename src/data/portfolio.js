@@ -27,12 +27,12 @@ export default [
       stack: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://athena272.github.io/calculator-js/'
    },
-   {
-      id: 4,
-      title: 'Car Catalog',
-      imgUrl: '/assets/calc-js.png',
-      stack: ['HTML', 'CSS'],
-      link: 'https://athena272.github.io/car-catalog/'
-   },
+   // {
+   //    id: 4,
+   //    title: 'Car Catalog',
+   //    imgUrl: '/assets/calc-js.png',
+   //    stack: ['HTML', 'CSS'],
+   //    link: 'https://athena272.github.io/car-catalog/'
+   // },
 
 ]
