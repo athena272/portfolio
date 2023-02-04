@@ -2,14 +2,14 @@ export default [
    {
       year: 'Atual',
       title: 'Estágio Desenvolvedor Front-End',
-      duration: '6 years',
+      duration: '8 meses',
       details: 
          'Minha humilde jornada de melhora como desenvolvedor Front-End enquanto trabalho para a empresa BNE(Banco Nacional de Empregos). Sou muito grato por tudo que estou aprendendo e sendo capaz de vivenciar graças a eles. Atualmente auxilio na manutenção e em breve na criação de novas páginas e funcionalidades nos projetos internos da emrpesa.'
    },
    {
 		year: 'Atual',
 		title: 'Hunter de Bugs/Hacker Ético',
-		duration: '2 years',
+		duration: '2 anos',
 		details:
 			"Caço falhas em sites, de maneira legalizada em troca de dinheiro e reputação.",
 	},
