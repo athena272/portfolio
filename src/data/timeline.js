@@ -25,7 +25,7 @@ export default [
 		title: "Bacharel em Engenharia da Computação",
 		duration: '4.5 anos',
 		details:
-			'Estou buscando o conhecimento que um diploma de Engeharia da Computação têm a oferecer. Estou aprendendo sobre arquitetura de computadores, teoria da ciência da computação, estrutura de dados, variáveis formas de programação e construir algoritmos.',
+			'Estou buscando o conhecimento que um diploma de Engeharia da Computação têm a oferecer. Estou aprendendo sobre arquitetura de computadores, teoria da ciência da computação, estrutura de dados, variáveis formas de programar e construir algoritmos.',
 	},
 	{
 		year: '2018',
