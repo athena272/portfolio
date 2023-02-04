@@ -9,9 +9,9 @@ export default [
    {
       id: 2,
       title: 'Developer Portfolio',
-      imgUrl: '/assets/dev-portfolio.jpg',
+      imgUrl: '/assets/profile.png',
       stack: ['React', 'JavaScript', 'Tailwind'],
-      link: ''
+      link: 'https://athena272portfolio.vercel.app/'
    },
    {
       id: 3,
