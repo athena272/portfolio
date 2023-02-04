@@ -15,17 +15,17 @@ export default [
 	},
 	{
 		year: '2022',
-		title: 'Estágio Desemvolvedor Flutter',
+		title: 'Estágio Desenvolvedor Flutter',
 		duration: '7 meses',
 		details:
-			'Ajudei a dar manuntenção e criar aplicativos com a tecnologia Flutter para a empresa SoftGreen em um ambiente com uma pilha de outras linguagens e ferramentas, das quais precisei estudar e ir me capacitano.',
+			'Ajudei a dar manuntenção e criar aplicativos com a tecnologia Flutter para a empresa SoftGreen em um ambiente com uma pilha de outras linguagens e ferramentas, das quais precisei estudar e ir me capacitando.',
 	},
 	{
 		year: '2021',
 		title: "Bacharel em Engenharia da Computação",
 		duration: '4.5 anos',
 		details:
-			'Estou buscando o conhecimento que um diploma de Engeharia da Computação têm a oferecer. Estou aprendendo sobre arquitetura de computadores, teoria da ciência da computação, estrutura de ados, variáveis formas de programação e construir algoritmos.',
+			'Estou buscando o conhecimento que um diploma de Engeharia da Computação têm a oferecer. Estou aprendendo sobre arquitetura de computadores, teoria da ciência da computação, estrutura de dados, variáveis formas de programação e construir algoritmos.',
 	},
 	{
 		year: '2018',
