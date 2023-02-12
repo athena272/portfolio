@@ -20,9 +20,15 @@ export default [
       stack: ['Angular', 'Typescript', 'Bootstrap'],
       link: 'https://healty-recipe.vercel.app/'
    },
-   
    {
       id: 4,
+      title: 'Movie Guide',
+      imgUrl: '/assets/movie-guide.png',
+      stack: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://athena272.github.io/movie-guide/'
+   },
+   {
+      id: 5,
       title: 'Calculator JS',
       imgUrl: '/assets/calc-js.png',
       stack: ['HTML', 'CSS', 'JavaScript'],
