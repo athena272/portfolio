@@ -13,26 +13,20 @@ export default [
       stack: ['React', 'JavaScript', 'Tailwind'],
       link: 'https://athena272portfolio.vercel.app/'
    },
-   // {
-   //    id: 3,
-   //    title: 'SpaceX',
-   //    imgUrl: '/assets/calc-js.png',
-   //    stack: ['HTML', 'SaSS', 'Bootstrap'],
-   //    link: 'https://athena272.github.io/spaceX/'
-   // },
    {
       id: 3,
+      title: 'Healty Life Recipe',
+      imgUrl: '/assets/healty-life-recipe.png',
+      stack: ['Angular', 'Typescript', 'Bootstrap'],
+      link: 'https://healty-recipe.vercel.app/'
+   },
+   
+   {
+      id: 4,
       title: 'Calculator JS',
       imgUrl: '/assets/calc-js.png',
       stack: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://athena272.github.io/calculator-js/'
    },
-   // {
-   //    id: 4,
-   //    title: 'Car Catalog',
-   //    imgUrl: '/assets/calc-js.png',
-   //    stack: ['HTML', 'CSS'],
-   //    link: 'https://athena272.github.io/car-catalog/'
-   // },
-
+   
 ]
