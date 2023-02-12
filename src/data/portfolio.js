@@ -34,5 +34,13 @@ export default [
       stack: ['HTML', 'CSS', 'JavaScript'],
       link: 'https://athena272.github.io/calculator-js/'
    },
+   {
+      id: 5,
+      title: 'More Projects',
+      imgUrl: '/assets/git.jpg',
+      stack: ['Git', 'GitHub', 'Agile'],
+      link: 'https://github.com/athena272?tab=repositories'
+   },
+
    
 ]
