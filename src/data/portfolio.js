@@ -24,7 +24,7 @@ export default [
       id: 4,
       title: 'Movie Guide',
       imgUrl: '/assets/movie-guide.png',
-      stack: ['HTML', 'CSS', 'JavaScript'],
+      stack: ['HTML', 'CSS', 'JavaScript', 'API'],
       link: 'https://athena272.github.io/movie-guide/'
    },
    {
