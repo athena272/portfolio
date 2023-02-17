@@ -14,11 +14,10 @@ Sinta-se à vontade para explorar o site e entrar em contato comigo se tiver alg
  
  ## Link de [Acesso](https://athena272portfolio.vercel.app/)
  
- - HTML <img align="center" alt="Gui-HTML" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
-- CSS <img align="center" alt="Gui-CSS" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+ - HTML <img align="center" alt="Gui-HTML" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+- Tailwind <img align="center" alt="Gui-CSS" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg">
 - Javascript <img align="center" alt="Gui-Js" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> 
 - Angular <img align="center" alt="Gui-Angular" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original.svg">
- 
  ## Dark Mode
 ![image](https://user-images.githubusercontent.com/58920070/219723736-11229efc-5d03-4ec1-9a6b-52b52e669d18.png)
 
