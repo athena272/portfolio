@@ -15,7 +15,7 @@ Sinta-se à vontade para explorar o site e entrar em contato comigo se tiver alg
  ## Link de [Acesso](https://athena272portfolio.vercel.app/)
  
  ## Dark Mode
-![image](https://user-images.githubusercontent.com/58920070/219719011-17441a78-c09b-4b9d-9e6b-17b1dc858bbe.png)
+![image](https://user-images.githubusercontent.com/58920070/219723736-11229efc-5d03-4ec1-9a6b-52b52e669d18.png)
 
  ## Light Mode
 ![image](https://user-images.githubusercontent.com/58920070/219721327-91d22a94-f657-4493-8f78-0fc972e551b1.png)
