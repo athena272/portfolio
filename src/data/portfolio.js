@@ -8,24 +8,24 @@ export default [
    },
    {
       id: 2,
-      title: 'Developer Portfolio',
-      imgUrl: '/assets/profile.png',
-      stack: ['React', 'JavaScript', 'Tailwind'],
-      link: 'https://athena272portfolio.vercel.app/'
-   },
-   {
-      id: 3,
       title: 'Healty Life Recipe',
       imgUrl: '/assets/healty-life-recipe.png',
       stack: ['Angular', 'Typescript', 'Bootstrap'],
       link: 'https://healty-recipe.vercel.app/'
    },
    {
-      id: 4,
+      id: 3,
       title: 'Movie Guide',
       imgUrl: '/assets/movie-guide.png',
       stack: ['HTML', 'CSS', 'JavaScript', 'API'],
       link: 'https://athena272.github.io/movie-guide/'
+   },
+   {
+      id: 4,
+      title: 'Flip a Coin',
+      imgUrl: '/assets/flip-coin.png',
+      stack: ['HTML', 'CSS', 'JavaScript'],
+      link: 'https://athena272.github.io/flip-coin-game/'
    },
    {
       id: 5,
@@ -35,12 +35,12 @@ export default [
       link: 'https://athena272.github.io/calculator-js/'
    },
    {
-      id: 5,
+      id: 6,
       title: 'More Projects',
       imgUrl: '/assets/git.jpg',
       stack: ['Git', 'GitHub', 'Agile'],
       link: 'https://github.com/athena272?tab=repositories'
    },
 
-   
+
 ]
