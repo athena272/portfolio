@@ -37,7 +37,7 @@ export default [
    {
       id: 6,
       title: 'More Projects',
-      imgUrl: '/assets/monalisa.png',
+      imgUrl: '/assets/ilusion.jpg',
       stack: ['Git', 'GitHub', 'Agile'],
       link: 'https://github.com/athena272?tab=repositories'
    },
