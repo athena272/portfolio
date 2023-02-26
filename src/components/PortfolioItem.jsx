@@ -11,7 +11,7 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
          <img
             src={imgUrl}
             alt="portfolio"
-            className="w-full h-46 md:h-60 object-contain cursor-pointer"
+            className="w-full h-50 md:h-65 object-contain cursor-pointer"
          />
          <div className="w-full p-4">
             <h3 className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold ">{title}</h3>
