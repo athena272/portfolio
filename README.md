@@ -14,7 +14,7 @@ Sinta-se à vontade para explorar o site e entrar em contato comigo se tiver alg
  
  ## Link de [Acesso](https://athena272portfolio.vercel.app/)
  
- - HTML <img align="center" alt="Gui-HTML" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
+ - React <img align="center" alt="Gui-HTML" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg">
 - Tailwind <img align="center" alt="Gui-CSS" height="30" width="30" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg">
 - Javascript <img align="center" alt="Gui-Js" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> 
 
