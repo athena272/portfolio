@@ -25,7 +25,7 @@ export default [
       title: 'NodeJs API',
       imgUrl: '/assets/nodeAPI.jpg',
       stack: ['JavaScript', 'NodeJS'],
-      link: 'https://github.com/athena272/first-api/'
+      link: 'https://github.com/athena272/nodejs-api/'
    },
    {
       id: 5,
