@@ -22,10 +22,10 @@ export default [
    },
    {
       id: 4,
-      title: 'Flip a Coin',
-      imgUrl: '/assets/flip-coin.png',
-      stack: ['HTML', 'CSS', 'JavaScript'],
-      link: 'https://athena272.github.io/flip-coin-game/'
+      title: 'NodeJs API',
+      imgUrl: '/assets/nodeAPI.jpg',
+      stack: ['JavaScript', 'NodeJS'],
+      link: 'https://github.com/athena272/first-api/'
    },
    {
       id: 5,
