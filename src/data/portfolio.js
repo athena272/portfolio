@@ -15,11 +15,12 @@ export default [
    },
    {
       id: 3,
-      title: 'Movie Guide',
-      imgUrl: '/assets/movie-guide.png',
-      stack: ['HTML', 'CSS', 'JavaScript', 'API'],
-      link: 'https://athena272.github.io/movie-guide/'
+      title: 'Space-X',
+      imgUrl: '/assets/spacex.jpg',
+      stack: ['HTML', 'SASS', 'Bootstrap'],
+      link: 'https://athena272.github.io/space-x/'
    },
+
    {
       id: 4,
       title: 'NodeJs API',
@@ -29,10 +30,10 @@ export default [
    },
    {
       id: 5,
-      title: 'Calculator JS',
-      imgUrl: '/assets/calc-js.png',
-      stack: ['HTML', 'CSS', 'JavaScript'],
-      link: 'https://athena272.github.io/calculator-js/'
+      title: 'Movie Guide',
+      imgUrl: '/assets/movie-guide.png',
+      stack: ['HTML', 'CSS', 'JavaScript', 'API'],
+      link: 'https://athena272.github.io/movie-guide/'
    },
    {
       id: 6,
