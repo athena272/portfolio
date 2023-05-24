@@ -4,7 +4,7 @@ export default [
       title: 'Estágio Desenvolvedor Front-End',
       duration: '8 meses',
       details: 
-         'Minha humilde jornada de melhora como desenvolvedor Front-End enquanto trabalho para a empresa BNE(Banco Nacional de Empregos). Sou muito grato por tudo que estou aprendendo e sendo capaz de vivenciar graças a eles. Atualmente auxilio na manutenção e em breve na criação de novas páginas e funcionalidades nos projetos internos da emrpesa.'
+         'Uma jornada de melhora como desenvolvedor Front-End enquanto trabalho para a empresa BNE(Banco Nacional de Empregos). Tenho experiência em realizar correção de bugs, criação de telas e estudos focados no desenvolvimento frontend. Possuo conhecimento em Sass, Typescript, Javascript e Bootstrap, tendo participado de projetos que envolveram essas tecnologias. Além disso, estou aprimorando minhas habilidades em testes unitários e ReactJS. '
    },
    {
 		year: 'Atual',
