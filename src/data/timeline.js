@@ -3,17 +3,17 @@ export default [
 		year: 'Atual',
 		title: 'Estágio Desenvolvedor Front-End',
 		duration: '5 meses',
-		details: 
-		   `Após o período de trabalho no BNE, fui transferido internamente para a equipe que cuida do produto RedTrabaje\n\n\nRedTrabaje é um produto voltado para um público internacional, onde o idioma principal é o espanhol e o idioma secundário é o português brasileiro. A plataforma tem como objetivo divulgar oportunidades de trabalho presenciais e em regime de home office em países que abrangem a América do Sul, América do Norte e Europa. Além da diversidade de continentes, os usuários da internet têm acesso a mais de 960 mil vagas disponíveis para lançar suas candidaturas de acordo com seu perfil. Estamos comprometidos em fornecer uma ampla variedade de oportunidades de emprego e facilitar a conexão entre candidatos e empregadores em diferentes regiões do mundo.`
-	 },
+		details:
+			`Após trabalhar no BNE, fui transferido internamente para a equipe responsável pelo produto RedTrabaje. O RedTrabaje é uma plataforma internacional que visa conectar pessoas em busca de emprego com oportunidades na América do Sul, América do Norte e Europa, tanto em trabalhos presenciais quanto remotos. Com mais de 960.000 vagas disponíveis, os usuários podem se candidatar facilmente de acordo com seus perfis. Nosso compromisso é fornecer uma ampla variedade de oportunidades de emprego e facilitar a conexão entre candidatos e empregadores em diferentes regiões.`
+	},
 	{
-      year: '2022/2023',
-      title: 'Estágio Desenvolvedor Front-End',
-      duration: '8 meses',
-      details: 
-         'Uma jornada de melhora como desenvolvedor Front-End enquanto trabalho para a empresa BNE(Banco Nacional de Empregos). Tenho experiência em realizar correção de bugs, criação de telas e estudos focados no desenvolvimento frontend. Possuo conhecimento em Sass, Typescript, Javascript e Bootstrap, tendo participado de projetos que envolveram essas tecnologias. Além disso, estou aprimorando minhas habilidades em testes unitários e ReactJS. '
-   },
-   {
+		year: '2022/2023',
+		title: 'Estágio Desenvolvedor Front-End',
+		duration: '8 meses',
+		details:
+			'Uma jornada de melhora como desenvolvedor Front-End enquanto trabalho para a empresa BNE(Banco Nacional de Empregos). Tenho experiência em realizar correção de bugs, criação de telas e estudos focados no desenvolvimento frontend. Possuo conhecimento em Sass, Typescript, Javascript e Bootstrap, tendo participado de projetos que envolveram essas tecnologias. Além disso, estou aprimorando minhas habilidades em testes unitários e ReactJS. '
+	},
+	{
 		year: 'Atual',
 		title: 'Hunter de Bugs/Hacker Ético',
 		duration: '2 anos',
