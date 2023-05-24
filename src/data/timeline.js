@@ -1,6 +1,15 @@
 export default [
-   {
-      year: 'Atual',
+	{
+		year: 'Atual',
+		title: 'Estágio Desenvolvedor Front-End',
+		duration: '5 meses',
+		details: 
+		   `Após o período de trabalho no BNE, fui transferido internamente para a equipe que cuida do produto RedTrabaje
+
+		   RedTrabaje é um produto voltado para um público internacional, onde o idioma principal é o espanhol e o idioma secundário é o português brasileiro. A plataforma tem como objetivo divulgar oportunidades de trabalho presenciais e em regime de home office em países que abrangem a América do Sul, América do Norte e Europa. Além da diversidade de continentes, os usuários da internet têm acesso a mais de 960 mil vagas disponíveis para lançar suas candidaturas de acordo com seu perfil. Estamos comprometidos em fornecer uma ampla variedade de oportunidades de emprego e facilitar a conexão entre candidatos e empregadores em diferentes regiões do mundo.`
+	 },
+	{
+      year: '2022/2023',
       title: 'Estágio Desenvolvedor Front-End',
       duration: '8 meses',
       details: 
