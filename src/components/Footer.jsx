@@ -7,6 +7,8 @@ function Footer() {
 				<div>
 					<div className="flex flex-wrap justify-center gap-2">
 						<a
+							role='link'
+							aria-label='linkedin-icon-link'
 							href="https://www.linkedin.com/in/guigorosario/"
 							target="_blank"
 							className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
@@ -22,7 +24,9 @@ function Footer() {
 							</svg>
 						</a>
 						<a
-							href="https://github.com/athena272" 
+							role='link'
+							aria-label='github-icon-link'
+							href="https://github.com/athena272"
 							target="_blank"
 							className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">
 							<svg
@@ -45,6 +49,8 @@ function Footer() {
 							</svg>
 						</a>
 						<a
+							role='link'
+							aria-label='twitter-icon-link'
 							href="https://twitter.com/athena_272"
 							target="_blank"
 							className="bg-stone-400 p-2 font-semibold text-white inline-flex items-center space-x-2 rounded-full">

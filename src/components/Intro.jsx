@@ -10,7 +10,7 @@ function Intro({ theme }) {
             Bem-vindo ao meu portfólio! Aqui você encontrará uma seleção cuidadosamente escolhida dos meus trabalhos, habilidades e experiências profissionais.<br />
             Estudante de Engenharia da Computação altamente motivado e entusiasmado com experiência em desenvolvimento web e interesse apurado em segurança web. <br />
             "A{' '}
-            <a href="https://github.com/athena272" target="_blank" style={{ color: `${theme === 'dark' ? '#38BDF8' : '#4C00FF'}` }} className="hover:underline underline-offset-2 decoration-2 decoration-red-600" rel="noreffer noopener">
+            <a href="https://github.com/athena272" target="_blank" style={{ textDecoration: 'underline', color: `${theme === 'dark' ? '#38BDF8' : '#4C00FF'}` }} rel="noreffer noopener">
                programação
             </a>
             {' '}iluminou meus dias mais sombrios." ⭐ <br />
