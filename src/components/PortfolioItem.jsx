@@ -11,7 +11,10 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
          <img
             src={imgUrl}
             alt="portfolio"
-            rel='preload'
+            rel="preload" 
+            fetchpriority="high" 
+            as="image"
+            type="image/webp"
             className="w-full h-46 md:h-60 object-contain cursor-pointer"
          />
          <div className="w-full p-4">
