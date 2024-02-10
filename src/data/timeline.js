@@ -1,8 +1,22 @@
 export default [
 	{
+		year: '2023/Atual',
+		title: 'Desenvolvedor Front-End Efetivado',
+		duration: '8 meses',
+		details:
+			`Após atuar como estagiário e passar por um processo de avaliações e desafios, consegui ser efetivado, vulgo "pejotado". Agora consigo dedicar mais horas ao serviço e vivenciar experiências do mundo real em um nível completamente diferente`
+	},
+	{
 		year: 'Atual',
+		title: 'Hunter de Bugs/Hacker Ético',
+		duration: '2 anos',
+		details:
+			"Caço falhas em sites, de maneira legalizada em troca de dinheiro e reputação.",
+	},
+	{
+		year: '2023',
 		title: 'Estágio Desenvolvedor Front-End',
-		duration: '5 meses',
+		duration: '6 meses',
 		details:
 			`Após trabalhar no BNE, fui transferido internamente para a equipe responsável pelo produto RedTrabaje. O RedTrabaje é uma plataforma internacional que visa conectar pessoas em busca de emprego com oportunidades na América do Sul, América do Norte e Europa, tanto em trabalhos presenciais quanto remotos. Com mais de 960.000 vagas disponíveis, os usuários podem se candidatar facilmente de acordo com seus perfis. Nosso compromisso é fornecer uma ampla variedade de oportunidades de emprego e facilitar a conexão entre candidatos e empregadores em diferentes regiões.`
 	},
@@ -12,13 +26,6 @@ export default [
 		duration: '8 meses',
 		details:
 			'Uma jornada de melhora como desenvolvedor Front-End enquanto trabalho para a empresa BNE(Banco Nacional de Empregos). Tenho experiência em realizar correção de bugs, criação de telas e estudos focados no desenvolvimento frontend. Possuo conhecimento em Sass, Typescript, Javascript e Bootstrap, tendo participado de projetos que envolveram essas tecnologias. Além disso, estou aprimorando minhas habilidades em testes unitários e ReactJS. '
-	},
-	{
-		year: 'Atual',
-		title: 'Hunter de Bugs/Hacker Ético',
-		duration: '2 anos',
-		details:
-			"Caço falhas em sites, de maneira legalizada em troca de dinheiro e reputação.",
 	},
 	{
 		year: '2022',
