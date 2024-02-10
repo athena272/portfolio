@@ -15,10 +15,10 @@ export default [
    },
    {
       id: 3,
-      title: 'Ice Cream Parlor',
-      imgUrl: '/assets/ice-cream-parlor.webp',
-      stack: ['React', 'Javascript', 'CSS'],
-      link: 'https://ice-cream-parlor-react.vercel.app/'
+      title: 'React Organo',
+      imgUrl: '/assets/organo.webp',
+      stack: ['React', 'Javascript', 'SCSS'],
+      link: 'https://react-organo-woad.vercel.app/'
    },
    {
       id: 4,
