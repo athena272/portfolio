@@ -17,7 +17,7 @@ export default [
       id: 3,
       title: 'React Organo',
       imgUrl: '/assets/organo.webp',
-      stack: ['React', 'Javascript', 'SCSS'],
+      stack: ['React', 'Javascript', 'SASS'],
       link: 'https://react-organo-woad.vercel.app/'
    },
    {
