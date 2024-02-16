@@ -4,7 +4,7 @@ export default [
 		title: 'Desenvolvedor Front-End Efetivado',
 		duration: '8 meses',
 		details:
-			`Após atuar como estagiário e passar por um processo de avaliações e desafios, consegui ser efetivado, vulgo "pejotado". Agora consigo dedicar mais horas ao serviço e vivenciar experiências do mundo real em um nível completamente diferente`
+			`Após atuar como estagiário e passar por processos de avaliações e desafios, entregar demandas grandes e provar meu valor, consegui ser efetivado, vulgo "pejotado". Agora consigo dedicar mais horas ao serviço e vivenciar experiências do mundo real em um nível completamente diferente. No momento trabalho com dois produtos grandes da empresa, o RedTrabaje e o Trabalha Brasil`
 	},
 	{
 		year: 'Atual',
@@ -18,14 +18,14 @@ export default [
 		title: 'Estágio Desenvolvedor Front-End',
 		duration: '6 meses',
 		details:
-			`Após trabalhar no BNE, fui transferido internamente para a equipe responsável pelo produto RedTrabaje. O RedTrabaje é uma plataforma internacional que visa conectar pessoas em busca de emprego com oportunidades na América do Sul, América do Norte e Europa, tanto em trabalhos presenciais quanto remotos. Com mais de 960.000 vagas disponíveis, os usuários podem se candidatar facilmente de acordo com seus perfis. Nosso compromisso é fornecer uma ampla variedade de oportunidades de emprego e facilitar a conexão entre candidatos e empregadores em diferentes regiões.`
+			`Ainda na mesma empresa, fui realocado para a equipe responsável pelo produto RedTrabaje. O RedTrabaje é uma plataforma internacional que visa conectar pessoas em busca de emprego com oportunidades na América do Sul, América do Norte e Europa, tanto em trabalhos presenciais quanto remotos. Com mais de 960.000 vagas disponíveis, os usuários podem se candidatar facilmente de acordo com seus perfis. Nosso compromisso é fornecer uma ampla variedade de oportunidades de emprego e facilitar a conexão entre candidatos e empregadores em diferentes regiões.`
 	},
 	{
 		year: '2022/2023',
 		title: 'Estágio Desenvolvedor Front-End',
 		duration: '8 meses',
 		details:
-			'Uma jornada de melhora como desenvolvedor Front-End enquanto trabalho para a empresa BNE(Banco Nacional de Empregos). Tenho experiência em realizar correção de bugs, criação de telas e estudos focados no desenvolvimento frontend. Possuo conhecimento em Sass, Typescript, Javascript e Bootstrap, tendo participado de projetos que envolveram essas tecnologias. Além disso, estou aprimorando minhas habilidades em testes unitários e ReactJS. '
+			'Entrei na empresa BNE(Banco Nacional de Empregos) para focar em desenvolvimento Front-End. Trabalhei com o básico do desenvolvimento web: HTML, CSS e Javascript, além de mexer com Sass, Bootstrap e JQuery, enquanto tinha liberdade para estudar, o que foi ótimo, uma vez que estou aprimorando minhas habilidades em ReactJS. Minhas principais atividades envolviam correção de bugs, criação e correção de telas, tempo para estudos e atividades auxiliares gerais '
 	},
 	{
 		year: '2022',
