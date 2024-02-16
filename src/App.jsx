@@ -1,3 +1,4 @@
+import "@fontsource/figtree";
 import React, { useEffect, useState } from 'react';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
