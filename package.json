@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && uglifyjs content.js --compress --mangle --output content.min.js",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
