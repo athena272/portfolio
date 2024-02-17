@@ -7,7 +7,7 @@ import Portfolio from './components/Portfolio';
 import Timeline from './components/Timeline';
 
 function App() {
-	const [theme, setTheme] = useState(null);
+	const [theme, setTheme] = useState('light');
 
 	useEffect(() => {
 		if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
