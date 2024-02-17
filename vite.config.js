@@ -3,18 +3,5 @@ import react from '@vitejs/plugin-react'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [
-    react(),
-    {
-      name: 'terser',
-      config: {
-        include: [/content\.js$/],
-        minify: {
-          output: {
-            comments: false,
-          },
-        },
-      },
-    },
-  ]
+  plugins: [react()]
 })
