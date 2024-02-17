@@ -1,10 +1,10 @@
 import "@fontsource/figtree";
 import React, { useEffect, useState } from 'react';
-import Contact from './components/minify/Contact'
-import Footer from './components/minify/Footer';
-import Intro from './components/minify/Intro';
-import Portfolio from './components/minify/Portfolio';
-import Timeline from './components/minify/Timeline';
+import Contact from './components/Contact'
+import Footer from './components/Footer';
+import Intro from './components/Intro';
+import Portfolio from './components/Portfolio';
+import Timeline from './components/Timeline';
 
 function App() {
 	const [theme, setTheme] = useState('light');
