@@ -15,7 +15,7 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
             fetchpriority="high"
             as="image"
             type="image/webp"
-            loading={imgUrl.includes('healty-life-recipe.webp') ? '' : 'lazy'}
+            loading={imgUrl.includes('healty-life-recipe.webp') ? 'eager' : 'lazy'}
             className="w-full h-46 md:h-60 object-contain cursor-pointer"
          />
          <div className="w-full p-4">
