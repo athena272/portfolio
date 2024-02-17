@@ -17,6 +17,8 @@ function PortfolioItem({ title, imgUrl, stack, link }) {
             type="image/webp"
             loading={'lazy'}
             className="w-full h-46 md:h-60 object-contain cursor-pointer"
+            width={328}
+            height={200}
          />
          <div className="w-full p-4">
             <p className="text-lg md:text-xl dark:text-white mb-2 md:mb-3 font-semibold ">{title}</p>
