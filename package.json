@@ -16,7 +16,8 @@
     "gulp-concat": "^2.6.1",
     "gulp-uglify": "^3.0.2",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "vite-plugin-html": "^3.2.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.24",
