@@ -7,10 +7,5 @@ export default defineConfig({
   plugins: [
     react(),
     minifyHtml(),
-    injectHtml({
-      injectData: {
-        injectScript: '<script src="content.min.js"></script>'
-      }
-    })
   ]
 })
