@@ -4,7 +4,7 @@ export default [
 		title: 'Desenvolvedor Front-End Efetivado',
 		duration: '8 meses',
 		details:
-			`Após atuar como estagiário e passar por processos de avaliações e desafios, entregar demandas grandes e provar meu valor, consegui ser efetivado, vulgo "pejotado". Agora consigo dedicar mais horas ao serviço e vivenciar experiências do mundo real em um nível completamente diferente, uma vez que no momento trabalho com dois produtos grandes da empresa, o RedTrabaje e o Trabalha Brasil. As principais com as quais trabalho são JQuery, AJAX, Bootstrap e a tecnologia Razor, enquanto sigo nos estudos e crio projeots em React. Minhas principais atividades envolvem dar manutenção e criar novas telas e fluxos dentro desses produtos, além de melhorias de performance e métricas de SEO.`
+			`Após atuar como estagiário e passar por processos de avaliações e desafios, entregar demandas grandes e provar meu valor, consegui ser efetivado, vulgo "pejotado". Agora consigo dedicar mais horas ao serviço e vivenciar experiências do mundo real em um nível completamente diferente, uma vez que no momento trabalho com dois produtos grandes da empresa, o RedTrabaje e o Trabalha Brasil. As principais tecnologias com as quais trabalho são JQuery, AJAX, Bootstrap e a tecnologia Razor, enquanto sigo nos estudos e crio projeots em React. Minhas principais atividades envolvem dar manutenção e criar novas telas e fluxos dentro desses produtos, além de melhorias de performance e métricas de SEO.`
 	},
 	{
 		year: 'Atual',
