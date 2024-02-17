@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && uglifyjs dist/assets/index.20f56b2e.js --compress --mangle --output dist/assets/index.20f56b2e.js",
     "preview": "vite preview"
   },
   "dependencies": {
