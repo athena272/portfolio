@@ -1,10 +1,10 @@
 export default [
    {
       id: 1,
-      title: 'Apple Store',
-      imgUrl: '/assets/apple-store.webp',
-      stack: ['NextJs', 'Typescript', 'Bootstrap'],
-      link: 'https://apple-store-beta.vercel.app/'
+      title: 'Code connect',
+      imgUrl: '/assets/code-connect.webp',
+      stack: ['NextJs', 'Typescript', 'Postgres'],
+      link: 'https://next-code-connect.vercel.app/'
    },
    {
       id: 2,
