@@ -21,6 +21,13 @@ export default [
 			'Ajudei a dar manuntenção e criar aplicativos com a tecnologia Flutter para a empresa SoftGreen em um ambiente com uma pilha de outras linguagens e ferramentas, das quais precisei estudar e ir me capacitando.',
 	},
 	{
+		year: '2024',
+		title: 'Tecnólogo em Análise e Desenvolvimento de Sistemas',
+		duration: '1 ano',
+		details:
+			'Preparação e formação em desenvolvimento de sistemas, com foco em diferentes aspectos da construção de software, incluindo análise de requisitos, modelagem de dados e design de software.',
+	},
+	{
 		year: '2021',
 		title: "Bacharel em Engenharia da Computação",
 		duration: '4.5 anos',
