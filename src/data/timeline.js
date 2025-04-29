@@ -1,31 +1,17 @@
 export default [
 	{
-		year: '2023/Atual',
+		year: '2022/Atual',
 		title: 'Desenvolvedor Front-End Efetivado',
-		duration: '8 meses',
+		duration: '2 anos e 8 meses',
 		details:
-			`Após atuar como estagiário e passar por processos de avaliações e desafios, entregar demandas grandes e provar meu valor, consegui ser efetivado, vulgo "pejotado". Agora consigo dedicar mais horas ao serviço e vivenciar experiências do mundo real em um nível completamente diferente, uma vez que no momento trabalho com dois produtos grandes da empresa, o RedTrabaje e o Trabalha Brasil. As principais tecnologias com as quais trabalho são JQuery, AJAX, Bootstrap e a tecnologia Razor, enquanto sigo nos estudos e crio projeots em React. Minhas principais atividades envolvem dar manutenção e criar novas telas e fluxos dentro desses produtos, além de melhorias de performance e métricas de SEO.`
+			`Atuação no desenvolvimento e manutenção das plataformas Trabalha Brasil e RedTrabaje, criando novas páginas, corrigindo bugs e otimizando a performance do site. Implementação de boas práticas de SEO e acompanhamento de métricas de performance via Google Analytics. Colaboração com equipes multidisciplinares para implantação de novas funcionalidades e melhorias contínuas. Tecnologias: HTML, CSS, JavaScript, jQuery, Bootstrap, React, Next.js, Regex, JSON, Git (Azure Repositories, Git Flow), Notion, API REST, Cypress, Gulp, Google Analytics Resultado: Reduziu o tempo médio de carregamento das páginas em 30%, gerando um aumento de 15% no engajamento dos usuários e maior volume de vagas anunciadas`
 	},
 	{
 		year: 'Atual',
 		title: 'Hunter de Bugs/Hacker Ético',
 		duration: '2 anos',
 		details:
-			"Caço falhas em sites, de maneira legalizada em troca de dinheiro e reputação.",
-	},
-	{
-		year: '2023',
-		title: 'Estágio Desenvolvedor Front-End',
-		duration: '6 meses',
-		details:
-			`Ainda na mesma empresa, fui realocado para a equipe responsável pelo produto RedTrabaje. O RedTrabaje é uma plataforma internacional que visa conectar pessoas em busca de emprego com oportunidades na América do Sul, América do Norte e Europa, tanto em trabalhos presenciais quanto remotos. Com mais de 960.000 vagas disponíveis, os usuários podem se candidatar facilmente de acordo com seus perfis. Nosso compromisso é fornecer uma ampla variedade de oportunidades de emprego e facilitar a conexão entre candidatos e empregadores em diferentes regiões.`
-	},
-	{
-		year: '2022/2023',
-		title: 'Estágio Desenvolvedor Front-End',
-		duration: '8 meses',
-		details:
-			'Entrei na empresa BNE(Banco Nacional de Empregos) para focar em desenvolvimento Front-End. Trabalhei com o básico do desenvolvimento web: HTML, CSS e Javascript, além de mexer com Sass, Bootstrap e JQuery, enquanto tinha liberdade para estudar, o que foi ótimo, uma vez que estou aprimorando minhas habilidades em ReactJS. Minhas principais atividades envolviam correção de bugs, criação e correção de telas, tempo para estudos e atividades auxiliares gerais '
+			"Caço falhas em sites, de maneira legalizada em troca de recompensas e reputação.",
 	},
 	{
 		year: '2022',
