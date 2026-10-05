@@ -59,4 +59,14 @@ export const profile: Profile = {
       },
     },
   ],
+  photo: {
+    src: "/images/profile-photo.jpg",
+    type: "image/jpeg",
+    width: 640,
+    height: 640,
+    alt: {
+      pt: "Foto de Guilherme, de óculos de armação preta e camiseta preta",
+      en: "Photo of Guilherme wearing black-framed glasses and a black T-shirt",
+    },
+  },
 };

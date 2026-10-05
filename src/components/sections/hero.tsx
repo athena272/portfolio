@@ -91,10 +91,10 @@ export function Hero() {
               className="absolute -inset-3 rounded-full bg-linear-to-tr from-primary/40 via-fuchsia-500/30 to-transparent blur-xl"
             />
             <Image
-              src="/images/avatar.png"
-              alt={t("avatarAlt")}
-              width={600}
-              height={600}
+              src={profile.photo.src}
+              alt={localize(profile.photo.alt, locale)}
+              width={profile.photo.width}
+              height={profile.photo.height}
               priority
               sizes="(min-width: 768px) 320px, 192px"
               className="relative size-48 rounded-full border-4 border-background object-cover shadow-xl ring-1 ring-border sm:size-64 md:size-80"

@@ -6,7 +6,7 @@ import pt from "@messages/pt.json";
 import { routing } from "@/i18n/routing";
 import { isValidYearMonth, parseYearMonth, periodSortKey } from "@/lib/dates";
 import { siteConfig } from "@/lib/site-config";
-import type { Period } from "@/types/content";
+import type { Period, ProfilePhoto } from "@/types/content";
 
 import { certifications, education } from "./education";
 import { experiences } from "./experiences";
@@ -114,12 +114,26 @@ describe("content", () => {
 
   it("references images that exist in public/", () => {
     const publicDir = join(process.cwd(), "public");
-    const images = [
-      "/images/avatar.png",
-      ...projects.flatMap((project) => project.image?.src ?? []),
-    ];
+    const images = [profile.photo.src, ...projects.flatMap((project) => project.image?.src ?? [])];
 
     images.forEach((src) => expect(existsSync(join(publicDir, src)), src).toBe(true));
+  });
+
+  it("declares the profile photo type that matches its file extension", () => {
+    const extension = profile.photo.src.split(".").pop()?.toLowerCase();
+    const typeByExtension: Record<string, ProfilePhoto["type"]> = {
+      png: "image/png",
+      jpg: "image/jpeg",
+      jpeg: "image/jpeg",
+    };
+
+    expect(typeByExtension[extension ?? ""], profile.photo.src).toBe(profile.photo.type);
+  });
+
+  it("describes the profile photo in every locale", () => {
+    for (const locale of routing.locales) {
+      expect(profile.photo.alt[locale].trim().length > 0, locale).toBe(true);
+    }
   });
 });
 
