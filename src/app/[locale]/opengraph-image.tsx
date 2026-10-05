@@ -21,8 +21,8 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
   const { locale: requested } = await params;
   const locale = hasLocale(routing.locales, requested) ? requested : routing.defaultLocale;
 
-  const avatar = await readFile(join(process.cwd(), "public/images/avatar.png"));
-  const avatarSrc = `data:image/png;base64,${avatar.toString("base64")}`;
+  const photo = await readFile(join(process.cwd(), "public", profile.photo.src));
+  const photoSrc = `data:${profile.photo.type};base64,${photo.toString("base64")}`;
 
   return new ImageResponse(
     <div
@@ -40,7 +40,7 @@ export default async function OpengraphImage({ params }: { params: Promise<{ loc
     >
       {/* eslint-disable-next-line @next/next/no-img-element -- next/og renders plain <img> only */}
       <img
-        src={avatarSrc}
+        src={photoSrc}
         alt=""
         width={300}
         height={300}

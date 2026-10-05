@@ -15,7 +15,7 @@ export function buildPersonJsonLd(locale: Locale) {
     description: localize(profile.headline, locale),
     url: siteConfig.url,
     email: `mailto:${siteConfig.email}`,
-    image: new URL("/images/avatar.png", siteConfig.url).toString(),
+    image: new URL(profile.photo.src, siteConfig.url).toString(),
     address: {
       "@type": "PostalAddress",
       addressLocality: "Aracaju",
