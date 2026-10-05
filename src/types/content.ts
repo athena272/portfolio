@@ -20,6 +20,16 @@ export type Profile = {
   location: LocalizedText;
   summary: LocalizedText[];
   highlights: ProfileHighlight[];
+  photo: ProfilePhoto;
+};
+
+export type ProfilePhoto = {
+  /** Path inside `public/`. PNG or JPEG only: the formats the Open Graph image renderer reads. */
+  src: string;
+  type: "image/png" | "image/jpeg";
+  width: number;
+  height: number;
+  alt: LocalizedText;
 };
 
 export type ProfileHighlight = {
