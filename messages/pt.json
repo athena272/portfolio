@@ -1,0 +1,120 @@
+{
+  "metadata": {
+    "title": "Guilherme Rosário Alves | Desenvolvedor Full Stack",
+    "description": "Portfólio de Guilherme Rosário Alves, desenvolvedor full stack com cerca de 5 anos de experiência em React, React Native e TypeScript no frontend e Node.js, Java, Python e PHP no backend. Veja experiências, projetos e entre em contato."
+  },
+  "common": {
+    "opensInNewTab": "(abre em nova aba)",
+    "loading": "Carregando…",
+    "present": "Atual"
+  },
+  "skipLink": "Pular para o conteúdo",
+  "nav": {
+    "label": "Navegação principal",
+    "home": "Início",
+    "about": "Sobre",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "skills": "Skills",
+    "education": "Formação",
+    "contact": "Contato",
+    "openMenu": "Abrir menu",
+    "closeMenu": "Fechar menu"
+  },
+  "theme": {
+    "toggle": "Alternar tema",
+    "activateLight": "Ativar tema claro",
+    "activateDark": "Ativar tema escuro"
+  },
+  "language": {
+    "switchTo": "Ver o site em inglês",
+    "switching": "Trocando idioma…",
+    "targetShort": "EN"
+  },
+  "hero": {
+    "availability": "Aberto a oportunidades",
+    "greeting": "Olá, eu sou",
+    "viewProjects": "Ver projetos",
+    "downloadCv": "Baixar CV",
+    "contact": "Fale comigo",
+    "avatarAlt": "Ilustração de Guilherme, de óculos redondos e moletom vermelho"
+  },
+  "about": {
+    "eyebrow": "Sobre mim",
+    "title": "Do protótipo à produção, de ponta a ponta"
+  },
+  "experience": {
+    "eyebrow": "Carreira",
+    "title": "Experiência profissional",
+    "stack": "Tecnologias"
+  },
+  "projects": {
+    "eyebrow": "Portfólio",
+    "title": "Projetos em destaque",
+    "description": "Sistemas em produção, produtos de grande escala e projetos acadêmicos que viraram software de verdade.",
+    "stack": "Tecnologias",
+    "live": "Ver online",
+    "repo": "Código",
+    "certificate": "Registro INPI",
+    "moreTitle": "Mais projetos no GitHub",
+    "moreDescription": "Estudos, experimentos e projetos pessoais estão nos meus repositórios públicos.",
+    "moreCta": "Ver repositórios"
+  },
+  "skills": {
+    "eyebrow": "Stack",
+    "title": "Tecnologias e práticas"
+  },
+  "education": {
+    "eyebrow": "Formação",
+    "title": "Formação e certificações",
+    "degrees": "Formação acadêmica",
+    "certifications": "Certificações",
+    "issuedBy": "por {issuer}"
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "title": "Vamos trabalhar juntos?",
+    "description": "Tem uma vaga, um projeto ou só quer trocar uma ideia? Envie uma mensagem pelo formulário ou fale comigo pelo WhatsApp e pelas redes.",
+    "emailLabel": "E-mail",
+    "form": {
+      "name": "Nome",
+      "namePlaceholder": "Como posso te chamar?",
+      "email": "E-mail",
+      "emailPlaceholder": "voce@empresa.com",
+      "message": "Mensagem",
+      "messagePlaceholder": "Conte um pouco sobre a oportunidade ou o projeto",
+      "characterCount": "{count} de {max} caracteres",
+      "submit": "Enviar mensagem",
+      "submitting": "Enviando…",
+      "successTitle": "Mensagem enviada!",
+      "successDescription": "Obrigado pelo contato. Vou responder o quanto antes.",
+      "sendAnother": "Enviar outra mensagem",
+      "retry": "Tentar novamente"
+    },
+    "errors": {
+      "nameTooShort": "Informe pelo menos 2 caracteres.",
+      "nameTooLong": "Use no máximo 100 caracteres.",
+      "emailInvalid": "Informe um e-mail válido.",
+      "messageTooShort": "Escreva pelo menos 10 caracteres.",
+      "messageTooLong": "Use no máximo 5000 caracteres.",
+      "timeout": "O envio demorou demais. Verifique sua conexão e tente novamente.",
+      "network": "Não foi possível conectar. Verifique sua internet e tente novamente.",
+      "server": "O serviço de mensagens está instável no momento. Tente novamente em instantes.",
+      "rejected": "A mensagem não foi aceita. Revise os dados ou me escreva por e-mail."
+    }
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "builtWith": "Feito com Next.js, TypeScript e Tailwind CSS."
+  },
+  "notFound": {
+    "title": "Página não encontrada",
+    "description": "O endereço que você acessou não existe ou foi movido.",
+    "backHome": "Voltar para o início"
+  },
+  "error": {
+    "title": "Algo deu errado",
+    "description": "Não foi possível carregar esta página. Tente novamente.",
+    "retry": "Tentar novamente"
+  }
+}
