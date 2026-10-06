@@ -64,4 +64,10 @@ describe("CI workflow", () => {
   it("sets up Node.js 24", () => {
     expect(workflow).toMatch(/^\s*node-version:\s*24\s*$/m);
   });
+
+  it("cancels superseded runs only for pull requests, never for pushes to main", () => {
+    expect(workflow).toMatch(
+      /^\s*cancel-in-progress:\s*\$\{\{\s*github\.event_name\s*==\s*'pull_request'\s*\}\}\s*$/m,
+    );
+  });
 });
