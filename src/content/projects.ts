@@ -10,7 +10,7 @@ export const projects: Project[] = [
       en: "Room scheduling for the HU-UFS outpatient clinic",
     },
     description: {
-      pt: "Reescrevi sozinho o sistema, migrando o backend de Java/Spring com PostgreSQL para NestJS com MongoDB Atlas e o frontend de Angular para React 19. Reservas avulsas e recorrentes com detecção de conflitos, quatro perfis de acesso, trilha de auditoria, alertas por e-mail e cerca de 750 testes automatizados.",
+      pt: "Reescrevi o sistema por conta própria, migrando o backend de Java/Spring com PostgreSQL para NestJS com MongoDB Atlas e o frontend de Angular para React 19. Reservas avulsas e recorrentes com detecção de conflitos, quatro perfis de acesso, trilha de auditoria, alertas por e-mail e cerca de 750 testes automatizados.",
       en: "A solo rewrite that moved the backend from Java/Spring with PostgreSQL to NestJS with MongoDB Atlas and the frontend from Angular to React 19. One-off and recurring bookings with conflict detection, four access profiles, an audit trail, email alerts and about 750 automated tests.",
     },
     period: { start: "2026-03", end: "present" },
@@ -84,7 +84,7 @@ export const projects: Project[] = [
       en: "Music social network registered at INPI",
     },
     description: {
-      pt: "Aplicativo desenvolvido por uma equipe de 8 pessoas na UFS e registrado no INPI (BR512025002036-8). Fui o principal contribuidor do frontend em React Native com Expo: feed com stories, player de música, avaliações e perfil, com builds via EAS.",
+      pt: "Aplicativo desenvolvido por uma equipe de 8 pessoas na UFS e registrado no INPI (BR512025002036-8). Tive a maior contribuição no frontend em React Native com Expo: feed com stories, player de música, avaliações e perfil, com builds via EAS.",
       en: "An app built by a team of 8 at UFS and registered at INPI, the Brazilian patent office (BR512025002036-8). I was the main frontend contributor in React Native with Expo: a feed with stories, a music player, reviews and profiles, with builds through EAS.",
     },
     period: { start: "2024-08", end: "2025-03" },

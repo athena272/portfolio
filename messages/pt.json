@@ -1,7 +1,7 @@
 {
   "metadata": {
-    "title": "Guilherme Rosário Alves | Desenvolvedor Full Stack",
-    "description": "Portfólio de Guilherme Rosário Alves, desenvolvedor full stack com cerca de 5 anos de experiência em React, React Native e TypeScript no frontend e Node.js, Java, Python e PHP no backend. Veja experiências, projetos e entre em contato."
+    "title": "Guilherme Rosário Alves | Desenvolvimento Full Stack",
+    "description": "Portfólio de Guilherme Rosário Alves, com cerca de 5 anos de experiência em desenvolvimento full stack: React, React Native e TypeScript no frontend e Node.js, Java, Python e PHP no backend. Veja experiências, projetos e entre em contato."
   },
   "common": {
     "opensInNewTab": "(abre em nova aba)",
@@ -32,7 +32,7 @@
     "targetShort": "EN"
   },
   "hero": {
-    "availability": "Aberto a oportunidades",
+    "availability": "Disponível para oportunidades",
     "greeting": "Olá, eu sou",
     "viewProjects": "Ver projetos",
     "downloadCv": "Baixar CV",
@@ -72,7 +72,7 @@
   },
   "contact": {
     "eyebrow": "Contato",
-    "title": "Vamos trabalhar juntos?",
+    "title": "Vamos trabalhar em parceria?",
     "description": "Tem uma vaga, um projeto ou só quer trocar uma ideia? Envie uma mensagem pelo formulário ou fale comigo pelo WhatsApp e pelas redes.",
     "emailLabel": "E-mail",
     "form": {
@@ -86,7 +86,7 @@
       "submit": "Enviar mensagem",
       "submitting": "Enviando…",
       "successTitle": "Mensagem enviada!",
-      "successDescription": "Obrigado pelo contato. Vou responder o quanto antes.",
+      "successDescription": "Agradeço o contato. Vou responder o quanto antes.",
       "sendAnother": "Enviar outra mensagem",
       "retry": "Tentar novamente"
     },

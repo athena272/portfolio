@@ -19,7 +19,7 @@ export const education: Education[] = [
     id: "unicesumar",
     institution: "UniCesumar",
     degree: {
-      pt: "Tecnólogo em Análise e Desenvolvimento de Sistemas",
+      pt: "Tecnologia em Análise e Desenvolvimento de Sistemas",
       en: "Associate degree in Systems Analysis and Development",
     },
     period: { start: "2024-07", end: "2025-09" },
@@ -28,7 +28,7 @@ export const education: Education[] = [
     id: "ifs",
     institution: "Instituto Federal de Sergipe (IFS)",
     degree: {
-      pt: "Técnico em Redes de Computadores",
+      pt: "Curso Técnico em Redes de Computadores",
       en: "Technical degree in Computer Networks",
     },
     period: { start: "2018-01", end: "2021-03" },

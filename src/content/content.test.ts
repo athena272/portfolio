@@ -173,6 +173,28 @@ describe("messages", () => {
   });
 });
 
+/** The Portuguese copy addresses everyone, so it avoids masculine forms ("desenvolvimento", not "desenvolvedor"). */
+const MASCULINE_TERMS =
+  /\b(desenvolvedor(es)?|programador|engenheiro|contribuidor|autor|tecnólogo|obrigado|sozinho|juntos|aberto a|apaixonado|focado)\b/i;
+
+describe("Portuguese copy", () => {
+  const ptTexts: [string, string][] = [
+    ...collectLocalizedTexts(allContent).map(([path, text]): [string, string] => [
+      `${path}.pt`,
+      String(text.pt),
+    ]),
+    ...Object.entries(flattenMessages(pt)),
+  ];
+
+  it("uses gender-neutral wording in content and messages", () => {
+    expect(ptTexts.length).toBeGreaterThan(0);
+
+    for (const [path, text] of ptTexts) {
+      expect(text, path).not.toMatch(MASCULINE_TERMS);
+    }
+  });
+});
+
 describe("whatsappUrl", () => {
   it("keeps only the digits, as wa.me requires", () => {
     expect(whatsappUrl("+55 (79) 99900-7075")).toBe("https://wa.me/5579999007075");
