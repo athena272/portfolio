@@ -90,7 +90,7 @@ export const experiences: Experience[] = [
       en: "Senior Full Stack Developer | Tech Lead",
     },
     location: { pt: "Palmas, Tocantins, Brasil", en: "Palmas, Tocantins, Brazil" },
-    period: { start: "2025-12", end: "2026-05" },
+    period: { start: "2025-12", end: "2026-06" },
     summary: {
       pt: "Referência técnica na modernização do nTask, ecossistema de gestão para cartórios com mais de 12 módulos integrados em produção, como Protesto, RTD, RCPJ e Financeiro.",
       en: "Technical lead on the modernization of nTask, a management ecosystem for notary offices with more than 12 integrated production modules, such as Protest, RTD, RCPJ and Finance.",
