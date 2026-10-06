@@ -5,7 +5,7 @@ export const experiences: Experience[] = [
   {
     id: "gol-software",
     company: "Gol Software",
-    role: { pt: "Desenvolvedor de Software Full Stack", en: "Full Stack Software Developer" },
+    role: { pt: "Desenvolvimento de Software Full Stack", en: "Full Stack Software Developer" },
     location: { pt: "Belém, Pará, Brasil", en: "Belém, Pará, Brazil" },
     period: { start: "2026-09", end: "present" },
     summary: {
@@ -41,12 +41,12 @@ export const experiences: Experience[] = [
   {
     id: "wefit",
     company: "WeFit - Digital Service Design",
-    role: { pt: "Desenvolvedor de Software Sênior", en: "Senior Software Developer" },
+    role: { pt: "Desenvolvimento de Software (Sênior)", en: "Senior Software Developer" },
     location: { pt: "São Paulo, Brasil", en: "São Paulo, Brazil" },
     period: { start: "2026-05", end: "2026-08" },
     summary: {
-      pt: "Desenvolvedor sênior React e React Native no aplicativo de RH da Rede Américas, rede hospitalar cujo app é usado pelos colaboradores para ponto eletrônico, documentos, dados pessoais e atendimento.",
-      en: "Senior React and React Native developer on the HR app of Rede Américas, a hospital network whose employees use the app for time tracking, documents, personal data and support.",
+      pt: "Atuação sênior com React, React Native e Python no aplicativo de RH da Rede Américas, rede hospitalar cujo app é usado pelos colaboradores para ponto eletrônico, documentos, dados pessoais e atendimento.",
+      en: "Senior React, React Native and Python developer on the HR app of Rede Américas, a hospital network whose employees use the app for time tracking, documents, personal data and support.",
     },
     highlights: [
       {
@@ -58,7 +58,7 @@ export const experiences: Experience[] = [
         en: "On mobile, built the chat module with Expo/React Native, TypeScript and React Query, featuring voice input with real-time transcription, locally persisted history (MMKV) and personalized suggestions.",
       },
       {
-        pt: "No backend, fui o principal autor da API em Python/FastAPI integrada ao Gemini 2.5 Flash, com agente que consulta sistemas internos, ingestão de base de conhecimento a partir de PDFs e otimizações de custo como cache de contexto.",
+        pt: "No backend, escrevi a maior parte da API em Python/FastAPI integrada ao Gemini 2.5 Flash, com agente que consulta sistemas internos, ingestão de base de conhecimento a partir de PDFs e otimizações de custo como cache de contexto.",
         en: "On the backend, was the main author of the Python/FastAPI API integrated with Gemini 2.5 Flash, with an agent that queries internal systems, knowledge-base ingestion from PDFs and cost optimizations such as context caching.",
       },
       {
@@ -86,7 +86,7 @@ export const experiences: Experience[] = [
     id: "cf236",
     company: "CF236",
     role: {
-      pt: "Desenvolvedor Full Stack Sênior | Tech Lead",
+      pt: "Desenvolvimento Full Stack (Sênior) | Tech Lead",
       en: "Senior Full Stack Developer | Tech Lead",
     },
     location: { pt: "Palmas, Tocantins, Brasil", en: "Palmas, Tocantins, Brazil" },
@@ -124,7 +124,7 @@ export const experiences: Experience[] = [
   {
     id: "bne",
     company: "BNE - Banco Nacional de Empregos",
-    role: { pt: "Desenvolvedor de Software", en: "Software Developer" },
+    role: { pt: "Desenvolvimento de Software", en: "Software Developer" },
     location: { pt: "Colombo, Paraná, Brasil", en: "Colombo, Paraná, Brazil" },
     period: { start: "2022-09", end: "2025-09" },
     summary: {
@@ -160,7 +160,7 @@ export const experiences: Experience[] = [
   {
     id: "softgreen",
     company: "SoftGreen",
-    role: { pt: "Desenvolvedor de Software", en: "Software Developer" },
+    role: { pt: "Desenvolvimento de Software", en: "Software Developer" },
     location: { pt: "São Paulo, Brasil", en: "São Paulo, Brazil" },
     period: { start: "2022-02", end: "2022-09" },
     summary: {
@@ -182,7 +182,7 @@ export const experiences: Experience[] = [
   {
     id: "omint",
     company: "OMINT",
-    role: { pt: "Desenvolvedor de Software", en: "Software Developer" },
+    role: { pt: "Desenvolvimento de Software", en: "Software Developer" },
     location: { pt: "Rio de Janeiro, Brasil", en: "Rio de Janeiro, Brazil" },
     period: { start: "2021-06", end: "2021-09" },
     summary: {

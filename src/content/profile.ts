@@ -3,7 +3,7 @@ import type { Profile } from "@/types/content";
 export const profile: Profile = {
   name: "Guilherme Rosário Alves",
   role: {
-    pt: "Desenvolvedor Full Stack",
+    pt: "Desenvolvimento Full Stack",
     en: "Full Stack Developer",
   },
   headline: {
@@ -16,7 +16,7 @@ export const profile: Profile = {
   },
   summary: [
     {
-      pt: "Sou desenvolvedor de software full stack, com cerca de 5 anos de experiência na construção e evolução de produtos web e mobile em produção. Meu foco é TypeScript, React, React Native e Node.js (NestJS), e também trabalho com Java, PHP (Laravel) e Python no backend.",
+      pt: "Trabalho com desenvolvimento de software full stack há cerca de 5 anos, construindo e evoluindo produtos web e mobile em produção. Meu foco é TypeScript, React, React Native e Node.js (NestJS), e também trabalho com Java, PHP (Laravel) e Python no backend.",
       en: "I'm a full stack software developer with about 5 years of experience building and evolving production web and mobile products. My focus is TypeScript, React, React Native and Node.js (NestJS), and I also work with Java, PHP (Laravel) and Python on the backend.",
     },
     {
