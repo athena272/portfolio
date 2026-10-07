@@ -8,7 +8,6 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { MAIN_CONTENT_ID, SkipLink } from "@/components/layout/skip-link";
-import { MotionProvider } from "@/components/providers/motion-provider";
 import { ThemeProvider } from "@/components/providers/theme-provider";
 import { getLocalizedHomePath, localeTags, routing } from "@/i18n/routing";
 import { siteConfig } from "@/lib/site-config";
@@ -87,14 +86,12 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
             enableSystem
             disableTransitionOnChange
           >
-            <MotionProvider>
-              <SkipLink />
-              <Header />
-              <main id={MAIN_CONTENT_ID} tabIndex={-1} className="flex-1 outline-none">
-                {children}
-              </main>
-              <Footer />
-            </MotionProvider>
+            <SkipLink />
+            <Header />
+            <main id={MAIN_CONTENT_ID} tabIndex={-1} className="flex-1 outline-none">
+              {children}
+            </main>
+            <Footer />
           </ThemeProvider>
         </NextIntlClientProvider>
         <Analytics />
