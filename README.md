@@ -10,8 +10,8 @@ Portfólio pessoal em português e inglês, com experiência profissional, proje
 - [Tailwind CSS v4](https://tailwindcss.com) e componentes no estilo [shadcn/ui](https://ui.shadcn.com)
 - [next-intl](https://next-intl.dev) para os idiomas (`/` em português, `/en` em inglês)
 - [next-themes](https://github.com/pacocoursey/next-themes) para tema claro e escuro, seguindo o sistema por padrão
-- [Motion](https://motion.dev) para animações, respeitando a preferência de movimento reduzido
-- [Zod](https://zod.dev) na validação do formulário, no navegador e no servidor
+- Animações de entrada com CSS e `IntersectionObserver`, respeitando a preferência de movimento reduzido
+- [Zod](https://zod.dev) na validação do formulário, no servidor e no navegador (carregado sob demanda, só quando o formulário é usado)
 - [Resend](https://resend.com) para entregar as mensagens do formulário, com template HTML próprio
 - [Vercel Analytics](https://vercel.com/analytics)
 - [Vitest](https://vitest.dev), [Testing Library](https://testing-library.com) e [MSW](https://mswjs.io) nos testes
