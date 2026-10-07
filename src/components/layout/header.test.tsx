@@ -1,47 +1,23 @@
-import { act, screen, within } from "@testing-library/react";
+import { screen, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 
 import { OBSERVED_SECTION_IDS, SECTION_IDS } from "@/lib/sections";
+import { installIntersectionObserverMock } from "@/test/intersection-observer-mock";
 import { renderWithIntl } from "@/test/render";
 
 import { Header } from "./header";
 
 vi.mock("@/i18n/navigation", async () => (await import("@/test/mock-navigation")).mockNavigation);
 
-/** Captures the observer callback so tests can simulate a section reaching the middle of the screen. */
-function installIntersectionObserverMock() {
-  let notify: IntersectionObserverCallback = () => {};
-  const observed = new Set<Element>();
+/** Simulates a section reaching the middle of the screen. */
+function installSectionScrollMock() {
+  const { intersect } = installIntersectionObserverMock();
 
-  class MockIntersectionObserver {
-    constructor(callback: IntersectionObserverCallback) {
-      notify = callback;
-    }
-    observe(element: Element) {
-      observed.add(element);
-    }
-    unobserve(element: Element) {
-      observed.delete(element);
-    }
-    disconnect() {
-      observed.clear();
-    }
-    takeRecords() {
-      return [];
-    }
-  }
-  vi.stubGlobal("IntersectionObserver", MockIntersectionObserver);
-
-  return (id: string) =>
-    act(() => {
-      const target = document.getElementById(id);
-      if (!target) throw new Error(`Missing section #${id}`);
-      if (!observed.has(target)) return;
-      notify(
-        [{ target, isIntersecting: true } as unknown as IntersectionObserverEntry],
-        {} as IntersectionObserver,
-      );
-    });
+  return (id: string) => {
+    const target = document.getElementById(id);
+    if (!target) throw new Error(`Missing section #${id}`);
+    intersect(target);
+  };
 }
 
 describe("Header active section", () => {
@@ -59,7 +35,7 @@ describe("Header active section", () => {
   }
 
   it("highlights the section in view and keeps it when switching language", () => {
-    const scrollTo = installIntersectionObserverMock();
+    const scrollTo = installSectionScrollMock();
     renderPage();
 
     scrollTo("projects");
@@ -76,7 +52,7 @@ describe("Header active section", () => {
   });
 
   it("clears the highlight after scrolling back up to the hero", () => {
-    const scrollTo = installIntersectionObserverMock();
+    const scrollTo = installSectionScrollMock();
     renderPage();
 
     scrollTo("about");

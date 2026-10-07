@@ -2,12 +2,8 @@
 
 import { useCallback, useReducer, useRef } from "react";
 
-import {
-  CONTACT_FIELDS,
-  validateContact,
-  type ContactField,
-  type ContactFieldErrors,
-} from "./contact-schema";
+import { CONTACT_FIELDS, type ContactField, type ContactFieldErrors } from "./contact-fields";
+import { loadContactValidator, type ContactValidatorLoader } from "./load-contact-validator";
 import { submitContact, type SubmitContactFailure } from "./submit-contact";
 
 export type ContactFormStatus = "idle" | "submitting" | "success" | "error";
@@ -56,15 +52,24 @@ export function contactFormReducer(
   }
 }
 
-/** Reads a form, validates it and submits it, exposing every step as explicit state. */
-export function useContactForm(submit: typeof submitContact = submitContact) {
+/**
+ * Reads a form, validates it and submits it, exposing every step as explicit state.
+ * The validator is loaded on demand; call `preloadValidator` as soon as the visitor engages with
+ * the form so it is already cached by the time they submit.
+ */
+export function useContactForm(
+  submit: typeof submitContact = submitContact,
+  loadValidator: ContactValidatorLoader = loadContactValidator,
+) {
   const [state, dispatch] = useReducer(contactFormReducer, initialContactFormState);
   const inFlight = useRef(false);
 
   /** Resolves with the first invalid field (so the caller can focus it), or `null`. */
   const submitForm = useCallback(
     async (form: HTMLFormElement): Promise<ContactField | null> => {
+      // Claimed before any await, so repeated submits while the validator loads send only once.
       if (inFlight.current) return null;
+      inFlight.current = true;
 
       const formData = new FormData(form);
       const readField = (field: string) => {
@@ -72,20 +77,20 @@ export function useContactForm(submit: typeof submitContact = submitContact) {
         return typeof value === "string" ? value : "";
       };
 
-      const validation = validateContact({
-        name: readField("name"),
-        email: readField("email"),
-        message: readField("message"),
-      });
-
-      if (!validation.success) {
-        dispatch({ type: "invalid", errors: validation.errors });
-        return CONTACT_FIELDS.find((field) => validation.errors[field]) ?? null;
-      }
-
-      inFlight.current = true;
-      dispatch({ type: "submit" });
       try {
+        const validateContact = await loadValidator();
+        const validation = validateContact({
+          name: readField("name"),
+          email: readField("email"),
+          message: readField("message"),
+        });
+
+        if (!validation.success) {
+          dispatch({ type: "invalid", errors: validation.errors });
+          return CONTACT_FIELDS.find((field) => validation.errors[field]) ?? null;
+        }
+
+        dispatch({ type: "submit" });
         const result = await submit({ ...validation.data, honeypot: readField("_gotcha") });
         dispatch(result.ok ? { type: "success" } : { type: "failure", reason: result.reason });
       } catch {
@@ -95,8 +100,13 @@ export function useContactForm(submit: typeof submitContact = submitContact) {
       }
       return null;
     },
-    [submit],
+    [submit, loadValidator],
   );
+
+  const preloadValidator = useCallback(() => {
+    // A failed preload is retried on submit, where the error is shown to the visitor.
+    loadValidator().catch(() => {});
+  }, [loadValidator]);
 
   const clearFieldError = useCallback(
     (field: ContactField) => dispatch({ type: "clearFieldError", field }),
@@ -104,5 +114,5 @@ export function useContactForm(submit: typeof submitContact = submitContact) {
   );
   const reset = useCallback(() => dispatch({ type: "reset" }), []);
 
-  return { state, submitForm, clearFieldError, reset };
+  return { state, submitForm, preloadValidator, clearFieldError, reset };
 }

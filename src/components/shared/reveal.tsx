@@ -1,7 +1,12 @@
 "use client";
 
-import { motion } from "motion/react";
-import type { ReactNode } from "react";
+import { useRef, type ReactNode } from "react";
+
+import { useInViewOnce } from "@/hooks/use-in-view-once";
+import { cn } from "@/lib/cn";
+
+/** Reveals slightly before the element reaches the bottom edge, so the motion is noticed. */
+const REVEAL_ROOT_MARGIN = "0px 0px -64px 0px";
 
 type RevealProps = {
   children: ReactNode;
@@ -10,17 +15,27 @@ type RevealProps = {
   delay?: number;
 };
 
-/** Fades and slides its content in the first time it scrolls into view. */
+/**
+ * Fades and slides its content in the first time it scrolls into view.
+ * With reduced motion requested, only the fade remains.
+ */
 export function Reveal({ children, className, delay = 0 }: RevealProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isRevealed = useInViewOnce(ref, { rootMargin: REVEAL_ROOT_MARGIN });
+
   return (
-    <motion.div
-      className={className}
-      initial={{ opacity: 0, y: 16 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "0px 0px -64px 0px" }}
-      transition={{ duration: 0.5, ease: "easeOut", delay }}
+    <div
+      ref={ref}
+      data-reveal=""
+      data-revealed={isRevealed}
+      style={delay > 0 ? { transitionDelay: `${delay}s` } : undefined}
+      className={cn(
+        "transition-[opacity,translate] duration-500 ease-out motion-reduce:translate-y-0",
+        isRevealed ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0",
+        className,
+      )}
     >
       {children}
-    </motion.div>
+    </div>
   );
 }

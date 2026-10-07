@@ -20,7 +20,7 @@ import { Label } from "@/components/ui/label";
 import { Spinner } from "@/components/ui/spinner";
 import { Textarea } from "@/components/ui/textarea";
 
-import { CONTACT_LIMITS, type ContactField } from "./contact-schema";
+import { CONTACT_LIMITS, type ContactField } from "./contact-fields";
 import { submitContact } from "./submit-contact";
 import { useContactForm } from "./use-contact-form";
 
@@ -36,7 +36,8 @@ export function ContactForm({ submit = submitContact }: ContactFormProps) {
     (submission) => submit({ ...submission, locale }),
     [submit, locale],
   );
-  const { state, submitForm, clearFieldError, reset } = useContactForm(submitWithLocale);
+  const { state, submitForm, preloadValidator, clearFieldError, reset } =
+    useContactForm(submitWithLocale);
   const formRef = useRef<HTMLFormElement>(null);
   const successHeadingRef = useRef<HTMLHeadingElement>(null);
   const idPrefix = useId();
@@ -89,6 +90,8 @@ export function ContactForm({ submit = submitContact }: ContactFormProps) {
       ref={formRef}
       noValidate
       onSubmit={handleSubmit}
+      onFocus={preloadValidator}
+      onPointerDown={preloadValidator}
       aria-busy={isSubmitting}
       className="flex flex-col gap-5"
     >

@@ -3,7 +3,6 @@ import Image from "next/image";
 import { useLocale, useTranslations } from "next-intl";
 
 import { ExternalLink } from "@/components/shared/external-link";
-import { Reveal } from "@/components/shared/reveal";
 import { SocialLinks } from "@/components/shared/social-links";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -32,7 +31,8 @@ export function Hero() {
       />
 
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 pt-16 pb-20 sm:px-6 sm:pt-24 sm:pb-28 md:grid-cols-[1fr_auto]">
-        <Reveal className="flex flex-col items-start">
+        {/* No entrance animation here: this is the LCP content and must be visible before hydration. */}
+        <div className="flex flex-col items-start">
           <Badge variant="outline" className="gap-2 rounded-full px-3 py-1">
             <span className="relative flex size-2" aria-hidden="true">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-success opacity-75 motion-reduce:animate-none" />
@@ -82,9 +82,9 @@ export function Hero() {
           </div>
 
           <SocialLinks className="mt-6 -ml-2" />
-        </Reveal>
+        </div>
 
-        <Reveal delay={0.15} className="order-first justify-self-center md:order-none">
+        <div className="order-first justify-self-center md:order-none">
           <div className="relative">
             <div
               aria-hidden="true"
@@ -95,12 +95,12 @@ export function Hero() {
               alt={localize(profile.photo.alt, locale)}
               width={profile.photo.width}
               height={profile.photo.height}
-              priority
+              preload
               sizes="(min-width: 768px) 320px, 192px"
               className="relative size-48 rounded-full border-4 border-background object-cover shadow-xl ring-1 ring-border sm:size-64 md:size-80"
             />
           </div>
-        </Reveal>
+        </div>
       </div>
     </section>
   );

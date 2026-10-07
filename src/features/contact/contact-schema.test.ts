@@ -1,4 +1,5 @@
-import { CONTACT_LIMITS, validateContact } from "./contact-schema";
+import { CONTACT_LIMITS } from "./contact-fields";
+import { validateContact } from "./contact-schema";
 
 const valid = {
   name: "Ana Souza",
