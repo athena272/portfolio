@@ -35,8 +35,8 @@ describe("ContactForm", () => {
     await user.type(screen.getByLabelText("E-mail"), "invalido");
     await user.click(screen.getByRole("button", { name: "Enviar mensagem" }));
 
+    expect(await screen.findByText("Informe pelo menos 2 caracteres.")).toBeInTheDocument();
     expect(submit).not.toHaveBeenCalled();
-    expect(screen.getByText("Informe pelo menos 2 caracteres.")).toBeInTheDocument();
     expect(screen.getByText("Informe um e-mail válido.")).toBeInTheDocument();
     expect(screen.getByText("Escreva pelo menos 10 caracteres.")).toBeInTheDocument();
 
@@ -85,6 +85,7 @@ describe("ContactForm", () => {
     renderWithIntl(<ContactForm submit={vi.fn()} />);
 
     await user.click(screen.getByRole("button", { name: "Enviar mensagem" }));
+    await screen.findByText("Informe pelo menos 2 caracteres.");
     await user.type(screen.getByLabelText("Nome"), "A");
 
     expect(screen.queryByText("Informe pelo menos 2 caracteres.")).not.toBeInTheDocument();
@@ -100,7 +101,7 @@ describe("ContactForm", () => {
     await fillForm(user);
     await user.click(screen.getByRole("button", { name: "Enviar mensagem" }));
 
-    const submitButton = screen.getByRole("button", { name: "Enviando…" });
+    const submitButton = await screen.findByRole("button", { name: "Enviando…" });
     expect(submitButton).toBeDisabled();
     expect(screen.getByLabelText("Nome")).toBeDisabled();
     expect(screen.getByRole("status")).toHaveTextContent("Enviando…");
@@ -182,7 +183,7 @@ describe("ContactForm", () => {
     renderWithIntl(<ContactForm submit={vi.fn()} />, { locale: "en" });
 
     await user.click(screen.getByRole("button", { name: "Send message" }));
-    expect(screen.getByText("Please enter at least 2 characters.")).toBeInTheDocument();
+    expect(await screen.findByText("Please enter at least 2 characters.")).toBeInTheDocument();
   });
 
   it("sends the language of the page along with the message", async () => {

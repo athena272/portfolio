@@ -2,17 +2,13 @@ import { z } from "zod";
 
 import type { Locale } from "@/i18n/routing";
 
-export const CONTACT_FIELDS = ["name", "email", "message"] as const;
-export type ContactField = (typeof CONTACT_FIELDS)[number];
-
-/** Message keys under `contact.errors` in the translation files. */
-export type ContactValidationError =
-  "nameTooShort" | "nameTooLong" | "emailInvalid" | "messageTooShort" | "messageTooLong";
-
-export const CONTACT_LIMITS = {
-  name: { min: 2, max: 100 },
-  message: { min: 10, max: 5000 },
-} as const;
+import {
+  CONTACT_FIELDS,
+  CONTACT_LIMITS,
+  type ContactField,
+  type ContactFieldErrors,
+  type ContactValidationError,
+} from "./contact-fields";
 
 export const contactSchema = z.object({
   name: z
@@ -40,7 +36,6 @@ export type ContactRequestBody = ContactInput & {
   /** Language of the page, so the reply can be written in it. */
   locale?: Locale;
 };
-export type ContactFieldErrors = Partial<Record<ContactField, ContactValidationError>>;
 
 export type ContactValidationResult =
   { success: true; data: ContactInput } | { success: false; errors: ContactFieldErrors };
