@@ -7,7 +7,7 @@ describe("localize", () => {
   });
 
   it("falls back to the default locale when the translation is blank", () => {
-    expect(localize({ pt: "Olá", en: "  " }, "en")).toBe("Olá");
+    expect(localize({ pt: "  ", en: "Hello" }, "pt")).toBe("Hello");
   });
 });
 
