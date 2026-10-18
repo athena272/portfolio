@@ -71,11 +71,11 @@ describe("handleContactRequest", () => {
     expect(send).not.toHaveBeenCalled();
   });
 
-  it("falls back to Portuguese when the locale is missing or unknown", async () => {
+  it("falls back to English when the locale is missing or unknown", async () => {
     const { send, response } = handle({ ...validBody, locale: "fr" });
 
     await response;
-    expect(send.mock.calls[0]?.[0].text).toContain("Idioma do site: Português");
+    expect(send.mock.calls[0]?.[0].text).toContain("Idioma do site: Inglês");
   });
 
   it.each([

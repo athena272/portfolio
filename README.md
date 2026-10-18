@@ -8,7 +8,7 @@ Portfólio pessoal em português e inglês, com experiência profissional, proje
 
 - [Next.js 16](https://nextjs.org) (App Router) com React 19 e TypeScript
 - [Tailwind CSS v4](https://tailwindcss.com) e componentes no estilo [shadcn/ui](https://ui.shadcn.com)
-- [next-intl](https://next-intl.dev) para os idiomas (`/` em português, `/en` em inglês)
+- [next-intl](https://next-intl.dev) para os idiomas (`/` em inglês, `/pt` em português; detecta o idioma do navegador)
 - [next-themes](https://github.com/pacocoursey/next-themes) para tema claro e escuro, seguindo o sistema por padrão
 - Animações de entrada com CSS e `IntersectionObserver`, respeitando a preferência de movimento reduzido
 - [Zod](https://zod.dev) na validação do formulário, no servidor e no navegador (carregado sob demanda, só quando o formulário é usado)

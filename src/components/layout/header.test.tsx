@@ -75,7 +75,7 @@ describe("Header", () => {
       .getAllByRole("link")
       .map((link) => link.getAttribute("href"));
 
-    expect(hrefs).toEqual(SECTION_IDS.map((id) => `/#${id}`));
+    expect(hrefs).toEqual(SECTION_IDS.map((id) => `/pt#${id}`));
   });
 
   it("points the section links to the English home page in English", () => {
@@ -84,13 +84,13 @@ describe("Header", () => {
     const nav = screen.getByRole("navigation", { name: "Main navigation" });
     expect(within(nav).getByRole("link", { name: "Projects" })).toHaveAttribute(
       "href",
-      "/en#projects",
+      "/#projects",
     );
   });
 
   it("links the logo to the top of the home page", () => {
     renderWithIntl(<Header />);
-    expect(screen.getByRole("link", { name: /Início/ })).toHaveAttribute("href", "/#home");
+    expect(screen.getByRole("link", { name: /Início/ })).toHaveAttribute("href", "/pt#home");
   });
 
   it("opens and closes the mobile menu", async () => {

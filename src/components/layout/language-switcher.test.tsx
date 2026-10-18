@@ -8,7 +8,7 @@ vi.mock("@/i18n/navigation", async () => (await import("@/test/mock-navigation")
 
 describe("LanguageSwitcher", () => {
   it("links to the English version when the page is in Portuguese", () => {
-    renderWithIntl(<LanguageSwitcher />);
+    renderWithIntl(<LanguageSwitcher />, { locale: "pt" });
 
     const link = screen.getByRole("link", { name: /Ver o site em inglês/ });
     expect(link).toHaveAttribute("data-locale", "en");
@@ -25,7 +25,7 @@ describe("LanguageSwitcher", () => {
   });
 
   it("keeps the current section after switching", () => {
-    renderWithIntl(<LanguageSwitcher hash="projects" />);
+    renderWithIntl(<LanguageSwitcher hash="projects" />, { locale: "pt" });
 
     expect(screen.getByRole("link", { name: /Ver o site em inglês/ })).toHaveAttribute(
       "href",
