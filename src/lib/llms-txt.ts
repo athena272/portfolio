@@ -35,8 +35,8 @@ function section(title: string, lines: string[]): string {
 
 function siteSection(): string {
   return section("Site", [
-    `- [Portfolio in Portuguese](${absoluteUrl(getLocalizedHomePath("pt"))}): default language`,
-    `- [Portfolio in English](${absoluteUrl(getLocalizedHomePath("en"))})`,
+    `- [Portfolio in English](${absoluteUrl(getLocalizedHomePath("en"))}): default language`,
+    `- [Portfolio in Portuguese](${absoluteUrl(getLocalizedHomePath("pt"))})`,
   ]);
 }
 

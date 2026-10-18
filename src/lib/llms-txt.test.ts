@@ -39,7 +39,7 @@ describe("buildLlmsTxt", () => {
 
   it("links both language versions of the site with absolute URLs", () => {
     expect(llmsTxt).toContain(`(${new URL("/", siteConfig.url).toString()})`);
-    expect(llmsTxt).toContain(`(${new URL("/en", siteConfig.url).toString()})`);
+    expect(llmsTxt).toContain(`(${new URL("/pt", siteConfig.url).toString()})`);
   });
 
   it("only uses absolute links", () => {
