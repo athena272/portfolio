@@ -78,7 +78,7 @@ export default async function LocaleLayout({ children, params }: LayoutProps<"/[
       data-scroll-behavior="smooth"
       suppressHydrationWarning
     >
-      <body className="flex min-h-dvh flex-col">
+      <body className="flex min-h-dvh flex-col" suppressHydrationWarning>
         <NextIntlClientProvider>
           <ThemeProvider
             attribute="class"

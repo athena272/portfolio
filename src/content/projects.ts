@@ -4,8 +4,7 @@ import type { Project } from "@/types/content";
 export const projects: Project[] = [
   {
     id: "clinicroom",
-    name: "ClinicRoom",
-    tagline: {
+    name: "ClinicRoom",    tagline: {
       pt: "Agendamento de salas do ambulatório do HU-UFS",
       en: "Room scheduling for the HU-UFS outpatient clinic",
     },

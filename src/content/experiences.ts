@@ -18,6 +18,10 @@ export const experiences: Experience[] = [
         en: "Full stack work in Java and JavaScript on the company's in-house architecture (Servlets and JSP on Tomcat), with SQL Server and Oracle.",
       },
       {
+        pt: "Desenvolvi o GOL Ponto Assistente, automação do fluxo de ponto eletrônico no Portal RH: Playwright, TypeScript, CAPTCHA com Gemini, dry-run e execução em GitHub Actions.",
+        en: "Built GOL Ponto Assistente, the official time-tracking workflow automation on the RH portal: Playwright, TypeScript, Gemini CAPTCHA solving, dry-run and GitHub Actions runs.",
+      },
+      {
         pt: "Introduzi os primeiros testes unitários automatizados (JUnit 5) no build do produto principal.",
         en: "Introduced the first automated unit tests (JUnit 5) into the main product's build.",
       },
@@ -29,6 +33,8 @@ export const experiences: Experience[] = [
     stack: [
       "Java",
       "JavaScript",
+      "TypeScript",
+      "Playwright",
       "JSP",
       "Servlets",
       "jQuery",
@@ -36,6 +42,8 @@ export const experiences: Experience[] = [
       "Oracle",
       "Tomcat",
       "JUnit",
+      "GitHub Actions",
+      "Gemini",
     ],
   },
   {
