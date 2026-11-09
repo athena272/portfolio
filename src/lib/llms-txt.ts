@@ -80,9 +80,10 @@ function educationSection(): string {
     (item) =>
       `- **${localize(item.degree, LLMS_LOCALE)}**, ${item.institution} (${period(item.period)})`,
   );
-  const certificates = certifications.map(
-    (item) => `- ${item.name}, ${item.issuer} (${formatYearMonth(item.issued, LLMS_LOCALE)})`,
-  );
+  const certificates = certifications.map((item) => {
+    const base = `- ${item.name}, ${item.issuer} (${formatYearMonth(item.issued, LLMS_LOCALE)})`;
+    return item.url ? `${base}: ${item.url}` : base;
+  });
   return section(nav.education, [...degrees, ...certificates]);
 }
 

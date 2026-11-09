@@ -1,6 +1,7 @@
 import { Award, GraduationCap } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
 
+import { ExternalLink } from "@/components/shared/external-link";
 import { Reveal } from "@/components/shared/reveal";
 import { Section } from "@/components/shared/section";
 import { certifications, education } from "@/content/education";
@@ -50,7 +51,16 @@ export function Education() {
                 className="flex flex-col gap-1 p-4 sm:flex-row sm:items-baseline sm:justify-between sm:gap-4"
               >
                 <div>
-                  <p className="text-sm font-medium">{certification.name}</p>
+                  {certification.url ? (
+                    <ExternalLink
+                      href={certification.url}
+                      className="text-sm font-medium underline-offset-4 hover:underline"
+                    >
+                      {certification.name}
+                    </ExternalLink>
+                  ) : (
+                    <p className="text-sm font-medium">{certification.name}</p>
+                  )}
                   <p className="text-xs text-muted-foreground">
                     {t("issuedBy", { issuer: certification.issuer })}
                   </p>

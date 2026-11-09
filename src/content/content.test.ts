@@ -96,6 +96,9 @@ describe("content", () => {
   it("only links to valid https URLs", () => {
     projects.forEach((project) => Object.values(project.links).forEach(expectHttpsUrl));
     socialLinks.forEach((link) => expectHttpsUrl(link.href));
+    certifications.forEach((certification) => {
+      if (certification.url) expectHttpsUrl(certification.url);
+    });
     [siteConfig.cvUrl, siteConfig.githubRepositoriesUrl].forEach(expectHttpsUrl);
   });
 

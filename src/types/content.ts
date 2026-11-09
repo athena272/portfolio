@@ -92,6 +92,8 @@ export type Certification = {
   name: string;
   issuer: string;
   issued: YearMonth;
+  /** Public verification URL when available (Credly, Cloud Skills Boost, EF SET, etc.). */
+  url?: string;
 };
 
 export type SocialLinkId = "whatsapp" | "linkedin" | "github";
