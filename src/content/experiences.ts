@@ -14,20 +14,24 @@ export const experiences: Experience[] = [
     },
     highlights: [
       {
-        pt: "Trabalho full stack em Java e JavaScript sobre a arquitetura própria da empresa (Servlets e JSP em Tomcat), com SQL Server e Oracle.",
-        en: "Full stack work in Java and JavaScript on the company's in-house architecture (Servlets and JSP on Tomcat), with SQL Server and Oracle.",
+        pt: "Trabalho full stack em Java e JavaScript sobre a arquitetura própria da empresa (VGol, Servlets e JSP em Tomcat), com SQL Server e Oracle.",
+        en: "Full stack work in Java and JavaScript on the company's in-house architecture (VGol, Servlets and JSP on Tomcat), with SQL Server and Oracle.",
       },
       {
         pt: "Desenvolvi o GOL Ponto Assistente, automação do fluxo de ponto eletrônico no Portal RH: Playwright, TypeScript, CAPTCHA com Gemini, dry-run e execução em GitHub Actions.",
         en: "Built GOL Ponto Assistente, the official time-tracking workflow automation on the RH portal: Playwright, TypeScript, Gemini CAPTCHA solving, dry-run and GitHub Actions runs.",
       },
       {
-        pt: "Introduzi os primeiros testes unitários automatizados (JUnit 5) no build do produto principal.",
-        en: "Introduced the first automated unit tests (JUnit 5) into the main product's build.",
+        pt: "Introduzi os primeiros testes unitários automatizados (JUnit 5) no build do produto principal e scripts T-SQL transacionais para correção de dados de clientes.",
+        en: "Introduced the first automated unit tests (JUnit 5) into the main product build and transactional T-SQL scripts to correct customer data.",
       },
       {
-        pt: "Desenvolvi scripts T-SQL transacionais e reexecutáveis para correção de dados de clientes, validados por testes automatizados sobre snapshots do banco.",
-        en: "Wrote transactional, re-runnable T-SQL scripts to fix customer data, validated by automated tests against database snapshots.",
+        pt: "Evoluí o eSocial RRA (anotações 211/388 e relatório 113), declarações SESPB (Nada Consta), alteração de período em licença/cessão e importação/exportação ConsigLog (ativos e inativos).",
+        en: "Evolved eSocial RRA (annotations 211/388 and report 113), SESPB declarations (Nada Consta), leave/assignment period changes, and ConsigLog import/export for active and inactive employees.",
+      },
+      {
+        pt: "Atuei na escala médica (cadastro e movimentos de plantão) e na importação de unidades organizacionais e nível do empregado para clientes públicos.",
+        en: "Worked on medical shift scheduling (doctor registration and on-call movements) and on importing organizational units and employee levels for public-sector clients.",
       },
     ],
     stack: [
@@ -44,6 +48,7 @@ export const experiences: Experience[] = [
       "JUnit",
       "GitHub Actions",
       "Gemini",
+      "eSocial",
     ],
   },
   {
@@ -51,7 +56,7 @@ export const experiences: Experience[] = [
     company: "WeFit - Digital Service Design",
     role: { pt: "Desenvolvimento de Software (Sênior)", en: "Senior Software Developer" },
     location: { pt: "São Paulo, Brasil", en: "São Paulo, Brazil" },
-    period: { start: "2026-05", end: "2026-08" },
+    period: { start: "2026-06", end: "2026-09" },
     summary: {
       pt: "Atuação sênior com React, React Native e Python no aplicativo de RH da Rede Américas, rede hospitalar cujo app é usado pelos colaboradores para ponto eletrônico, documentos, dados pessoais e atendimento.",
       en: "Senior React, React Native and Python developer on the HR app of Rede Américas, a hospital network whose employees use the app for time tracking, documents, personal data and support.",
@@ -166,6 +171,35 @@ export const experiences: Experience[] = [
     ],
   },
   {
+    id: "gol-software-freelance",
+    company: "Gol Software",
+    role: {
+      pt: "Desenvolvimento Full Stack (Freelance)",
+      en: "Full Stack Developer (Freelance)",
+    },
+    location: { pt: "Belém, Pará, Brasil", en: "Belém, Pará, Brazil" },
+    period: { start: "2023-05", end: "2023-11" },
+    summary: {
+      pt: "Atuação freelance no GOL RH, em paralelo a outro vínculo, com entregas em folha de pagamento, anotações funcionais, exportações e customizações para clientes públicos.",
+      en: "Freelance work on GOL RH alongside another role, delivering payroll features, functional annotations, exports and customizations for public-sector clients.",
+    },
+    highlights: [
+      {
+        pt: "Ajustei regras de folha (rubricas, folha complementar/suplementar e cálculos específicos de clientes) na arquitetura Java/VGol com SQL Server.",
+        en: "Adjusted payroll rules (pay items, complementary/supplementary payroll and client-specific calculations) on the Java/VGol architecture with SQL Server.",
+      },
+      {
+        pt: "Evoluí anotações de afastamento (131, 275 e 278), telas e visões relacionadas, com cuidado em impactos de eSocial (evento S-2210).",
+        en: "Evolved leave annotations (131, 275 and 278), related screens and views, with care for eSocial impacts (S-2210 event).",
+      },
+      {
+        pt: "Trabalhei em customizações de exportação ConsigLog, conferência de importações com filtro de empresa e remoção de particularidades por cliente em pacotes de configuração.",
+        en: "Worked on ConsigLog export customizations, import review with company filters, and removal of client-specific quirks in configuration packages.",
+      },
+    ],
+    stack: ["Java", "JavaScript", "JSP", "Servlets", "SQL Server", "eSocial", "Git"],
+  },
+  {
     id: "softgreen",
     company: "SoftGreen",
     role: { pt: "Desenvolvimento de Software", en: "Software Developer" },
@@ -192,7 +226,7 @@ export const experiences: Experience[] = [
     company: "OMINT",
     role: { pt: "Desenvolvimento de Software", en: "Software Developer" },
     location: { pt: "Rio de Janeiro, Brasil", en: "Rio de Janeiro, Brazil" },
-    period: { start: "2021-06", end: "2021-09" },
+    period: { start: "2021-05", end: "2021-09" },
     summary: {
       pt: "Manutenção e evolução de sistemas web internos da Omint, empresa de planos de saúde e seguros.",
       en: "Maintenance and evolution of internal web systems at Omint, a health plan and insurance company.",
