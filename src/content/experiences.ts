@@ -9,8 +9,8 @@ export const experiences: Experience[] = [
     location: { pt: "Belém, Pará, Brasil", en: "Belém, Pará, Brazil" },
     period: { start: "2026-09", end: "present" },
     summary: {
-      pt: "Desenvolvimento e manutenção do GOL RH, plataforma de gestão de pessoas usada por órgãos públicos e empresas em todo o Brasil, com módulos de folha de pagamento, eSocial, ponto eletrônico e portal do servidor.",
-      en: "Development and maintenance of GOL RH, a people management platform used by public agencies and companies across Brazil, with payroll, eSocial, time tracking and employee portal modules.",
+      pt: "Desenvolvimento e manutenção do GOL RH (folha, eSocial, ponto e portal do servidor) para órgãos públicos e empresas no Brasil, além da migração do site institucional da empresa para HTML estático.",
+      en: "Development and maintenance of GOL RH (payroll, eSocial, time tracking and employee portal) for public agencies and companies in Brazil, plus migrating the company's institutional website to static HTML.",
     },
     highlights: [
       {
@@ -26,12 +26,16 @@ export const experiences: Experience[] = [
         en: "Introduced the first automated unit tests (JUnit 5) into the main product build and transactional T-SQL scripts to correct customer data.",
       },
       {
-        pt: "Evoluí o eSocial RRA (anotações 211/388 e relatório 113), declarações SESPB (Nada Consta), alteração de período em licença/cessão e importação/exportação ConsigLog (ativos e inativos).",
-        en: "Evolved eSocial RRA (annotations 211/388 and report 113), SESPB declarations (Nada Consta), leave/assignment period changes, and ConsigLog import/export for active and inactive employees.",
+        pt: "Evoluí o eSocial RRA (anotações 211/388 e relatório 113), declarações SESPB (Nada Consta e alteração de período em licença/cessão) e retorno ConsigLog com filtro por tipo de empregado (ativos e inativos).",
+        en: "Evolved eSocial RRA (annotations 211/388 and report 113), SESPB declarations (Nada Consta and leave/assignment period changes), and ConsigLog return filtering by employee type for active and inactive staff.",
       },
       {
-        pt: "Atuei na escala médica (cadastro e movimentos de plantão) e na importação de unidades organizacionais e nível do empregado para clientes públicos.",
-        en: "Worked on medical shift scheduling (doctor registration and on-call movements) and on importing organizational units and employee levels for public-sector clients.",
+        pt: "Atuei em saúde ocupacional (autocomplete de lesão em atestado/relatório médico e correções na escala/plantão), regras de cálculo de rubricas (truncamento e arredondamento) e importação de unidades organizacionais e nível do empregado.",
+        en: "Worked on occupational health (injury autocomplete on medical certificates/reports and on-call shift fixes), payroll item calculation rules (truncation and rounding), and importing organizational units and employee levels.",
+      },
+      {
+        pt: "Migrei o site institucional da Gol Software de WordPress/Elementor para HTML estático (Apache), com formulário de contato via SMTP, FAQ e paridade visual com o site anterior.",
+        en: "Migrated Gol Software's institutional website from WordPress/Elementor to static HTML (Apache), with SMTP contact form, FAQ and visual parity with the previous site.",
       },
     ],
     stack: [
@@ -42,6 +46,9 @@ export const experiences: Experience[] = [
       "JSP",
       "Servlets",
       "jQuery",
+      "HTML",
+      "CSS",
+      "Apache",
       "SQL Server",
       "Oracle",
       "Tomcat",
